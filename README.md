@@ -1,8 +1,11 @@
+http://metaraine.github.io/gettingStartedJS/#/33
+
 ARRAYS
 
 	instanceof
 
-	Ordered list of values
+	An ARRAY is an ordered list of values
+	Access an individual item with myArray[INDEX]
 	
 	var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 	var thirdDayOfWeek = days[2];
@@ -21,14 +24,14 @@ OBJECTS
 	A value with custom properties
 
 	var movieReview = {
-		title: "Tommy Boy"
-		director: "some funny dude"
-		rating: 5.0
+		title: "Spirited Away"
+		director: "Hayao Miyazaki"
+		rating: 4.5
 	}
 	
 
-	key value e.g.(title:'Tommy Boy')
-	name value e.g.(title:'Tommy Boy')
+	key value e.g.(title:'Spirited Away')
+	name value e.g.(title:'Spirited Away')
 	BOTH key value AND name value are "Properties"
 
 	KEYS & NAMES: Are strings.
@@ -36,8 +39,6 @@ OBJECTS
 
 	What is a VALUE?
 		A value is something that can be STORED.
-			Primitives
-			Array
 
 	var movieReview = {
 		title: "Spirited Away"
@@ -57,6 +58,8 @@ OBJECTS
 	movieReview['TITLE'.toUpperCase()];
 	movieReview['TITLE'.toLowerCase()];
 
+//
+
 	var movieReview = {
 		title: "Spirited Away"
 		director: "Hayao Miyazaki"
@@ -67,6 +70,7 @@ OBJECTS
 	alert(ratingPercent + "%");
 	// returns 90%
 
+//
 
 	var movieReview = {
      title:    "Spirited Away",
@@ -77,6 +81,7 @@ OBJECTS
 	alert(movieReview["year"]);
 		//returns 2001
 
+//
 
 	var movieReview = {
 	     title:    "Spirited Away",
@@ -86,5 +91,33 @@ OBJECTS
 	movieReview.year = 2001;
 	alert(movieReview.year);
 		//returns 2001
+
+//
+
+	var student ={
+		name:"Zed",
+		iq:120,
+		age:300
+	};
+
+	for (var key in student) {
+		console.log(key)
+	}
+
+	//returns
+	//name
+	//iq
+	//age
+
+//
+
+	for (var key in student) {
+	console.log(student[key]);
+	}
+	
+	//returns
+	//Zed
+	//120
+	//300
 
 
