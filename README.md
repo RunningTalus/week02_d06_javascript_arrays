@@ -1,7 +1,7 @@
 ARRAYS
 
 	instanceof
-	
+
 	Ordered list of values
 	
 	var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
@@ -40,10 +40,51 @@ OBJECTS
 			Array
 
 	var movieReview = {
-		title: "Tommy Boy"
-		director: "some funny dude"
-		rating: 5.0
+		title: "Spirited Away"
+		director: "Hayao Miyazaki"
+		rating: 4.5
 	}
 
 	var movieTitle = movieReview['title'];
 	alert(movieTitle);
+
+	var propertyName = 'title';
+	
+	movieReview[propertyName];
+	movieReview['ti' + 'tle'];
+	movieReview[['t' + 'i' + 't' + 'l' + 'e'].join('')]
+	movieReview['TITLE'];
+	movieReview['TITLE'.toUpperCase()];
+	movieReview['TITLE'.toLowerCase()];
+
+	var movieReview = {
+		title: "Spirited Away"
+		director: "Hayao Miyazaki"
+		rating: 4.5
+	};
+
+	var ratingPercent = movieReview['rating'] /5 *100;
+	alert(ratingPercent + "%");
+	// returns 90%
+
+
+	var movieReview = {
+     title:    "Spirited Away",
+     director: "Hayao Miyazaki",
+     rating:   4.5
+	};
+	movieReview["year"] = 2001;
+	alert(movieReview["year"]);
+		//returns 2001
+
+
+	var movieReview = {
+	     title:    "Spirited Away",
+	     director: "Hayao Miyazaki",
+	     rating:   4.5
+	};
+	movieReview.year = 2001;
+	alert(movieReview.year);
+		//returns 2001
+
+
