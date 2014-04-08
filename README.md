@@ -120,4 +120,22 @@ OBJECTS
 	//120
 	//300
 
+//
+
+REVIEW TUESDAY APRIL 8th, 2014
+
+.Notation
+	Valid identifier (no - in key name)
+	Key CANNOT be stored in variable
+	myObject.Name
+		.Name is treated as a string literal
+
+Arrays
+	Stack (Push & Pop).
+		Last In, First out (LIFO).
+			Adding and removing from the same end.  
+				example: Elevator, Fishing Boat, Laundry Basket
+	Queue (Push & Shift).
+		First In, First Out (FIFO).
+			Adding and removing from the opposite end.  
 
